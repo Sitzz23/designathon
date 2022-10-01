@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "kbold";
+    src: url("../assets/fonts/ABold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "kbody";
+    src: url("../assets/fonts/amed.woff2") format("woff2");
+}
+@font-face {
+    font-family: "boldy";
+    src: url("../assets/fonts/kbody.woff2") format("woff2");
+}
+
+.bold {
+    font-family: "kbold";
+}
+
+.body {
+    font-family: "kbody";
+}
+
+.time{
+    font-family: "boldy"
+}
