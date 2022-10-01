@@ -7,19 +7,25 @@
         <link href="styles.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="bower_components/chartist/dist/chartist.min.js"></script>
+        <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+        <link
+            href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
         <title>Designathon-MUJ</title>
         <link rel="icon" href="./assets/logo.png" />
     </head>
     <body class="h-screen w-screen bg-[#C8D9EB]">
         <div class="p-6 h-full flex justify-flex-start">
             <div
-                class="flex flex-col items-center w-20 h-full overflow-hidden text-[#C8D9EB] bg-white rounded-l-xl"
+                class="flex flex-col items-center w-24 h-full  overflow-hidden text-[#C8D9EB] bg-white rounded-l-xl "
             >
                 <a class="flex items-center justify-center m-4" href="#">
                     <img src="./assets/doglogo.svg" alt="dog-logo" />
                 </a>
                 <div
-                    class="flex flex-col items-center gap-4 mt-3 border-t border-gray-300"
+                    class="flex flex-col items-center gap-6 mt-3 border-t border-gray-300"
                 >
                     <a
                         class="flex items-center justify-center w-12 h-12 mt-2 text-gray-700 rounded-full bg-[#EBF2FA]"
@@ -39,7 +45,7 @@
                         </svg>
                     </a>
                     <a
-                        class="flex items-center justify-center w-12 h-12 mt-2 rounded-full hover:bg-[#EBF2FA]"
+                        class="flex items-center justify-center w-12 h-12 mt-2 rounded-full hover:bg-[#EBF2FA] hover:text-gray-700 transition-all"
                         href="#"
                     >
                         <svg
@@ -57,7 +63,7 @@
                         </svg>
                     </a>
                     <a
-                        class="flex items-center justify-center w-12 h-12 mt-2 rounded-full hover:bg-[#EBF2FA]"
+                        class="flex items-center justify-center w-12 h-12 mt-2 rounded-full hover:bg-[#EBF2FA] hover:text-gray-700 transition-all"
                         href="#"
                     >
                         <svg
@@ -72,7 +78,7 @@
                         </svg>
                     </a>
                     <a
-                        class="flex items-center justify-center w-12 h-12 mt-2 rounded-full hover:bg-[#EBF2FA]"
+                        class="flex items-center justify-center w-12 h-12 mt-2 rounded-full hover:bg-[#EBF2FA] hover:text-gray-700 transition-all"
                         href="#"
                     >
                         <svg
@@ -90,10 +96,10 @@
                     </a>
                 </div>
                 <div
-                    class="flex flex-col items-center mt-2 border-t border-gray-300"
+                    class="flex flex-col gap-6 items-center mt-2 border-t border-gray-300"
                 >
                     <a
-                        class="flex items-center justify-center w-12 h-12 mt-2 rounded-full hover:bg-[#EBF2FA]"
+                        class="flex items-center justify-center w-12 h-12 mt-2 rounded-full hover:bg-[#EBF2FA] hover:text-gray-700 transition-all"
                         href="#"
                     >
                         <svg
@@ -113,7 +119,7 @@
                         </svg>
                     </a>
                     <a
-                        class="flex items-center justify-center w-12 h-12 mt-2 rounded-full hover:bg-[#EBF2FA]"
+                        class="flex items-center justify-center w-12 h-12 mt-2 rounded-full hover:bg-[#EBF2FA] hover:text-gray-700 transition-all"
                         href="#"
                     >
                         <svg
@@ -128,7 +134,7 @@
                         </svg>
                     </a>
                     <a
-                        class="relative flex items-center justify-center w-12 h-12 mt-2 hover:bg-gray-300"
+                        class="relative flex items-center justify-center w-12 h-12 mt-2 rounded-full hover:bg-[#EBF2FA] hover:text-gray-700 transition-all"
                         href="#"
                     >
                         <svg
@@ -156,7 +162,7 @@
                     <img src="./assets/logo.svg" alt="dog-user" width="full" />
                 </a>
             </div>
-            <div class="p-6 bg-[#F8ECEC] w-1/2">
+            <div class="p-6 bg-[#F8ECEC] w-4/5">
                 <div class="h-full">
                     <h3 class="body text-gray-600">👋 Hey, Good Morning</h3>
                     <div class="flex justify-between gap-5">
@@ -201,20 +207,35 @@
                     <div class="p-6 pt-[76px]">
                         <div class="grid gap-8 grid-cols-3 w-full time">
                             <div
-                                class="bg-[#FEE0B2] p-4 text-center flex justify-center items-center rounded-lg shadow-lg flex-col"
+                                class="bg-[#FEE0B2] pt-8 relative text-center flex justify-center items-center rounded-lg shadow-lg flex-col"
                             >
+                                <img
+                                    src="./assets/plan.svg"
+                                    alt="calender"
+                                    class="absolute -top-[70%] left-[32%] w-24"
+                                />
                                 <p class="my-2 text-3xl bold">256</p>
                                 <p class="mb-2">Pets Treated</p>
                             </div>
                             <div
-                                class="bg-[#CCB4F5] p-4 text-center flex justify-center items-center rounded-lg shadow-lg flex-col"
+                                class="bg-[#CCB4F5] pt-8 relative text-center flex justify-center items-center rounded-lg shadow-lg flex-col"
                             >
+                                <img
+                                    src="./assets/pet.svg"
+                                    alt="calender"
+                                    class="absolute -top-[70%] left-[28%] w-28"
+                                />
                                 <p class="my-2 text-3xl bold">134</p>
                                 <p class="mb-2">New Pet Patients</p>
                             </div>
                             <div
-                                class="bg-[#A3D3FE] p-4 text-center flex justify-center items-center rounded-lg shadow-lg flex-col"
+                                class="bg-[#A3D3FE] pt-8 relative text-center flex justify-center items-center rounded-lg shadow-lg flex-col"
                             >
+                                <img
+                                    src="./assets/clock.svg"
+                                    alt="calender"
+                                    class="absolute -top-[70%] left-[32%] w-24"
+                                />
                                 <p class="my-2 text-3xl bold">230</p>
                                 <p class="mb-2">Cases Completed</p>
                             </div>
@@ -385,15 +406,95 @@
                     </div>
                 </div>
             </div>
-            <div class="p-4 bg-[#EFD9DB] rounded-r-xl">
+            <div class="px-12 py-4 bg-[#EFD9DB] rounded-r-xl">
                 <div class="bold h-full pt-6 text-xl">
-                    <!-- calender here -->
+                    <div class="calendar block body text-base"></div>
                     <!-- chart -->
+                    <div class="p-4 m-4 mt-8 w-10/12" id="chart"></div>
                 </div>
             </div>
         </div>
 
         <!-- <div class="ct-chart"></div> -->
+        <script>
+            var data = {
+                // A labels array that can contain any sort of values
+                labels: ["Mon", "Tue", "Wed", "Thu", "Fri"],
+                // Our series array that contains series objects or in this case series data arrays
+                series: [[2, 3, 2, 4, 2]],
+            };
+            var options = {
+                // extends the chart the full width of the div
+                fullWidth: true,
+                chartPadding: 0,
+                showArea: true,
+
+                axisX: {
+                    offset: 64,
+                    showGrid: false,
+                    showLabel: true,
+                },
+
+                axisY: {
+                    offset: 0,
+                    showGrid: true,
+                    showLabel: false,
+                },
+            };
+            new Chartist.Line("#chart", data, options).on(
+                "draw",
+                function (data) {
+                    if (data.type === "point") {
+                        data.element._node.addEventListener(
+                            "mouseenter",
+                            (e) => {
+                                const tooltip =
+                                    document.getElementsByClassName(
+                                        "chartist-tooltip"
+                                    );
+
+                                tooltip[0].style.top = data.y - 50 + "px";
+
+                                tooltip[0].style.left =
+                                    data.x > 200
+                                        ? data.x - 100 + "px"
+                                        : data.x + "px";
+
+                                // Here we're removing the hidden class so that the tooltip will display.
+                                tooltip[0].classList.remove("hidden");
+
+                                // This gets the tooltip meta div.
+                                const meta = document.getElementsByClassName(
+                                    "chartist-tooltip-meta"
+                                );
+
+                                meta[0].innerHTML = data.meta;
+
+                                const value = document.getElementsByClassName(
+                                    "chartist-tooltip-value"
+                                );
+
+                                value[0].innerHTML =
+                                    data.value.y === 1
+                                        ? data.value.y + " view"
+                                        : data.value.y + " views";
+                            }
+                        );
+
+                        data.element._node.addEventListener(
+                            "mouseleave",
+                            (e) => {
+                                const tooltip =
+                                    document.getElementsByClassName(
+                                        "chartist-tooltip"
+                                    );
+                                tooltip[0].classList.add("hidden");
+                            }
+                        );
+                    }
+                }
+            );
+        </script>
         <script src="app.js"></script>
     </body>
 </html>
