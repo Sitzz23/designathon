@@ -24,18 +24,16 @@
 }
 
 .calendar {
-   
     position: relative;
     background: white;
     color: #000;
     border-radius: 20px;
     box-sizing: border-box;
     overflow: hidden;
-    
 }
 
 .calendar-inner {
-    padding: 10px;
+    padding: 6px;
 }
 
 .calendar .calendar-inner .calendar-body {
@@ -49,7 +47,7 @@
     min-height: 30px;
     line-height: 30px;
     border: 1px solid transparent;
-    margin: 10px 2px 0px;
+    margin: 8px 2px 0px;
 }
 
 .calendar .calendar-inner .calendar-body div:nth-child(-n + 7) {
@@ -89,7 +87,7 @@
     cursor: pointer;
     margin: 3px 0px;
     background: #fee0b2;
-    padding: 8px 0px;
+    padding: 4px 0px;
     border-radius: 10px;
     width: 80%;
     margin: auto;
@@ -116,7 +114,6 @@
     .calendar-controls
     .calendar-year-month
     .calendar-month-label {
-   
     font-size: 16px;
 }
 
@@ -135,13 +132,12 @@
 
 .calendar .calendar-inner .calendar-controls .calendar-next a,
 .calendar .calendar-inner .calendar-controls .calendar-prev a {
-   
     font-size: 14px;
     text-decoration: none;
-    padding: 4px 12px;
+    padding: 4px px;
     display: inline-block;
 
-    margin: 10px 0 10px 0;
+    margin: 8px 0 8px 0;
 }
 
 .calendar .calendar-inner .calendar-controls .calendar-next a svg,

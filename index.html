@@ -19,7 +19,7 @@
     <body class="h-screen w-screen bg-[#C8D9EB]">
         <div class="p-6 h-full flex justify-flex-start">
             <div
-                class="flex flex-col items-center w-24 h-full  overflow-hidden text-[#C8D9EB] bg-white rounded-l-xl "
+                class="flex flex-col items-center w-24 h-full overflow-hidden text-[#C8D9EB] bg-white rounded-l-xl"
             >
                 <a class="flex items-center justify-center m-4" href="#">
                     <img src="./assets/doglogo.svg" alt="dog-logo" />
@@ -166,7 +166,7 @@
                 <div class="h-full">
                     <h3 class="body text-gray-600">👋 Hey, Good Morning</h3>
                     <div class="flex justify-between gap-5">
-                        <h1 class="bold text-4xl">Christopher Nolan</h1>
+                        <h1 class="bold p-1 text-5xl">Christopher Nolan</h1>
                         <div class="flex items-end gap-2 ml-14">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -249,7 +249,7 @@
                         </div>
                     </div>
 
-                    <div class="pt-8 pb-4 px-4">
+                    <div class="pt-6 pb-4 px-4">
                         <ol class="relative border-l border-gray-200">
                             <li class="mb-6 ml-6">
                                 <span
@@ -407,94 +407,20 @@
                 </div>
             </div>
             <div class="px-12 py-4 bg-[#EFD9DB] rounded-r-xl">
-                <div class="bold h-full pt-6 text-xl">
+                <div class="bold h-full pt-6 text-xl flex flex-col gap-4">
                     <div class="calendar block body text-base"></div>
                     <!-- chart -->
-                    <div class="p-4 m-4 mt-8 w-10/12" id="chart"></div>
+                    <h1 class="">Patients this month:</h1>
+
+                    <div class="px-4 mx-auto w-52 -mt-4">
+                        <img src="./assets/graph.svg" alt="calender" class="" />
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- <div class="ct-chart"></div> -->
-        <script>
-            var data = {
-                // A labels array that can contain any sort of values
-                labels: ["Mon", "Tue", "Wed", "Thu", "Fri"],
-                // Our series array that contains series objects or in this case series data arrays
-                series: [[2, 3, 2, 4, 2]],
-            };
-            var options = {
-                // extends the chart the full width of the div
-                fullWidth: true,
-                chartPadding: 0,
-                showArea: true,
-
-                axisX: {
-                    offset: 64,
-                    showGrid: false,
-                    showLabel: true,
-                },
-
-                axisY: {
-                    offset: 0,
-                    showGrid: true,
-                    showLabel: false,
-                },
-            };
-            new Chartist.Line("#chart", data, options).on(
-                "draw",
-                function (data) {
-                    if (data.type === "point") {
-                        data.element._node.addEventListener(
-                            "mouseenter",
-                            (e) => {
-                                const tooltip =
-                                    document.getElementsByClassName(
-                                        "chartist-tooltip"
-                                    );
-
-                                tooltip[0].style.top = data.y - 50 + "px";
-
-                                tooltip[0].style.left =
-                                    data.x > 200
-                                        ? data.x - 100 + "px"
-                                        : data.x + "px";
-
-                                // Here we're removing the hidden class so that the tooltip will display.
-                                tooltip[0].classList.remove("hidden");
-
-                                // This gets the tooltip meta div.
-                                const meta = document.getElementsByClassName(
-                                    "chartist-tooltip-meta"
-                                );
-
-                                meta[0].innerHTML = data.meta;
-
-                                const value = document.getElementsByClassName(
-                                    "chartist-tooltip-value"
-                                );
-
-                                value[0].innerHTML =
-                                    data.value.y === 1
-                                        ? data.value.y + " view"
-                                        : data.value.y + " views";
-                            }
-                        );
-
-                        data.element._node.addEventListener(
-                            "mouseleave",
-                            (e) => {
-                                const tooltip =
-                                    document.getElementsByClassName(
-                                        "chartist-tooltip"
-                                    );
-                                tooltip[0].classList.add("hidden");
-                            }
-                        );
-                    }
-                }
-            );
-        </script>
+        <div></div>
         <script src="app.js"></script>
     </body>
 </html>
